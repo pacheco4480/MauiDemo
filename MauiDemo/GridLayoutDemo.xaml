@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiDemo.GridLayoutDemo"
+             Title="Grid Layout Demo">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="50" />
+        </Grid.RowDefinitions>
+
+        <!-- Top Logo Section -->
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center"
+                     Margin="0,10,0,0" Grid.Row="0">
+            <Image Source="logo.svg" Opacity="0.8" VerticalOptions="Start"
+                   Margin="0,3,0,0"/>
+        </StackLayout>
+
+        <!-- Main Content Section -->
+        <Grid Grid.Row="1" Margin="20,0,20,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <!-- Alien Profile Image -->
+            <Image Source="perfil.png" HeightRequest="70"
+                   VerticalOptions="EndAndExpand" />
+
+            <!-- Email Entry -->
+            <Entry Grid.Row="1" Placeholder="Email ou Telefone"
+                   PlaceholderColor="LightGreen" FontSize="16"
+                   TextColor="White" BackgroundColor="#2E2E2E"/>
+
+            <!-- Password Entry -->
+            <Entry Grid.Row="2" Placeholder="Senha"
+                   PlaceholderColor="LightGreen" FontSize="16"
+                   IsPassword="True" TextColor="White" BackgroundColor="#2E2E2E"/>
+
+            <!-- Login Button -->
+            <Button Text="Login" BackgroundColor="#3F3D56"
+                   TextColor="LimeGreen" HeightRequest="50"
+                   VerticalOptions="Start" Grid.Row="3"/>
+
+            <!-- Help Label -->
+            <Label Text="Problemas no Login?" HorizontalOptions="Center"
+                   Grid.Row="4" Margin="0,10,0,0" FontSize="12"
+                   TextColor="LightGreen"/>
+
+            <!-- Social Media Login Section -->
+            <Grid Grid.Row="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <!-- Left Divider -->
+                <Label BackgroundColor="#4A4A4A" HeightRequest="1"
+                       HorizontalOptions="FillAndExpand"
+                       VerticalOptions="Center"/>
+
+                <!-- Facebook Icon -->
+                <Image Source="facebook.png" Grid.Column="1"
+                       VerticalOptions="Center" Margin="10,0,10,0"/>
+
+                <!-- Right Divider -->
+                <Label BackgroundColor="#4A4A4A" Grid.Column="2"
+                       HeightRequest="1" HorizontalOptions="FillAndExpand"
+                       VerticalOptions="Center"/>
+            </Grid>
+
+            <!-- Social Login Text -->
+            <StackLayout Orientation="Horizontal"
+                         HorizontalOptions="CenterAndExpand" Grid.Row="6">
+                <Label Text="Login com Facebook" TextColor="LimeGreen"/>
+            </StackLayout>
+        </Grid>
+
+        <!-- Footer Section -->
+        <StackLayout Grid.Row="2" BackgroundColor="White">
+            <Label HeightRequest="1" BackgroundColor="#3F3D56"/>
+            <Label Text="Não possui uma Conta? Registe-se"
+                   VerticalOptions="FillAndExpand"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Center"
+                   TextColor="LightGreen"/>
+        </StackLayout>
+    </Grid>
+
+</ContentPage>

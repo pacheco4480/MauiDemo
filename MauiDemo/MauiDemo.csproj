@@ -57,6 +57,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\facebook.png" />
+	  <None Remove="Resources\Images\logo.svg" />
+	  <None Remove="Resources\Images\perfil.png" />
 	  <None Remove="Resources\Images\plus.png" />
 	  <None Remove="Resources\Images\settings.png" />
 	  <None Remove="Resources\Images\trash.png" />
@@ -76,6 +79,9 @@
 
 	<ItemGroup>
 	  <MauiXaml Update="FlyoutPageDemo.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="GridLayoutDemo.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="MinhaPagina.xaml">
