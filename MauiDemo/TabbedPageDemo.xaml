@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiDemo.TabbedPageDemo"
+             Title="TabbedPageDemo">
+
+    <ContentPage Title="Pag.1" BackgroundColor="BlanchedAlmond" IconImageSource="settings.png">
+        <Label Text="Página 1"
+               FontSize="Large"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center"/>
+    </ContentPage>
+
+    <ContentPage Title="Pag.2" BackgroundColor="CadetBlue" IconImageSource="trash.png">
+        <Label Text="Página 2"
+               FontSize="Large"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center"/>
+    </ContentPage>
+
+    <ContentPage Title="Pag.3" BackgroundColor="Yellow" IconImageSource="plus.png">
+        <Label Text="Página 3"
+               FontSize="Large"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center"/>
+    </ContentPage>
+
+    <ContentPage Title="Pag.4" IconImageSource="dotnet_bot.png">
+        <Label Text="Página 4"
+               FontSize="Large"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center"/>
+    </ContentPage>
+
+</TabbedPage>

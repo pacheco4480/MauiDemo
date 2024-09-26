@@ -13,7 +13,7 @@
             navPage.BarBackground = Colors.Yellow;
             navPage.BarTextColor = Colors.Blue;
 
-            MainPage = navPage;
+            MainPage = new TabbedPageDemo();
         }
     }
 }
